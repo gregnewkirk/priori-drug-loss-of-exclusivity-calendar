@@ -1,0 +1,33 @@
+{
+  "title": "Priori Drug Loss-of-Exclusivity (LOE) Calendar input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "mode": {
+      "title": "Query mode",
+      "type": "string",
+      "description": "Look up a single drug (by ingredient or brand name) or roll up all drugs for a company/applicant.",
+      "enum": ["drug", "company"],
+      "enumTitles": ["Drug (ingredient or brand name)", "Company (applicant)"],
+      "default": "drug",
+      "prefill": "drug"
+    },
+    "query": {
+      "title": "Search term",
+      "type": "string",
+      "description": "Drug ingredient or brand name (mode = drug), or company/applicant name (mode = company). Case-insensitive substring match.",
+      "editor": "textfield",
+      "prefill": "apixaban",
+      "example": "apixaban"
+    },
+    "maxResults": {
+      "title": "Max drug records",
+      "type": "integer",
+      "description": "Cap on the number of drug records returned in drug mode.",
+      "default": 100,
+      "minimum": 1,
+      "maximum": 5000
+    }
+  },
+  "required": ["query"]
+}

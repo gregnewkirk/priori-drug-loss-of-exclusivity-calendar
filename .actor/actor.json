@@ -1,0 +1,9 @@
+{
+  "actorSpecification": 1,
+  "name": "priori-drug-loss-of-exclusivity-calendar",
+  "title": "Priori Drug Patent Loss-of-Exclusivity (LOE) Calendar",
+  "description": "FDA Orange Book drug patent and exclusivity intelligence: latest patent expiry, exclusivity windows, and a computed loss-of-exclusivity date by drug or company.",
+  "version": "0.1",
+  "input": "./input_schema.json",
+  "dockerfile": "../Dockerfile"
+}

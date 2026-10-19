@@ -1,0 +1,24 @@
+{
+  "name": "priori-loe-calendar",
+  "version": "0.1.0",
+  "description": "Priori Patent Intelligence: Drug Loss-of-Exclusivity (LOE) Calendar. FDA Orange Book patent and exclusivity intelligence.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node dist/main.js",
+    "build": "tsc",
+    "dev": "tsx src/main.ts",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "apify": "^3.4.2",
+    "fflate": "^0.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
